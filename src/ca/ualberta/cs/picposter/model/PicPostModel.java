@@ -2,6 +2,8 @@ package ca.ualberta.cs.picposter.model;
 
 import java.util.Date;
 
+import ca.ualberta.cs.picposter.ElasticSearchOperations;
+
 import android.graphics.Bitmap;
 
 /**
@@ -11,21 +13,21 @@ import android.graphics.Bitmap;
 public class PicPostModel {
 	
 	
-	//private Bitmap picture;
+	private Bitmap picture;
 	private String text;
 	private Date timestamp;
 	
 	
 	public PicPostModel(String text, Date timestamp) {
-		//this.picture = picture;
+		this.picture = picture;
 		this.text = text;
-		this.timestamp = timestamp;
+		this.timestamp = timestamp;		
 	}
 	
 	
-	//public Bitmap getPicture() {
-	//	return this.picture;
-	//}
+	public Bitmap getPicture() {
+		return this.picture;
+	}
 	
 	
 	public String getText() {
